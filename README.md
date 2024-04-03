@@ -31,7 +31,7 @@ WHERE regexp_replace(full_names.name, '\.[^.]*$', '') = temp_table.filename;
 ```
 
 ### Решение 2
-```
+```sql
 UPDATE full_names
 SET status = short_names.status
 FROM short_names
